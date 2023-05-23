@@ -1,0 +1,66 @@
+<section class="pearlerp">
+  <img
+    src="https://demo.pearlerp.com/Images/erp-logo-small.png"
+    alt="logo"
+    class="center"
+  />
+  <form
+    [formGroup]="validateForm"
+    (ngSubmit)="submitForm()"
+    class="pearlerp-form flex"
+  >
+    <h4 class="gill center gill">Login</h4>
+    <hr />
+    <a href="/">Don't have an account? Sign Up Now!</a>
+    <a href="/">Want to do login by another way? Click Here!</a>
+    <div class="form-group">
+      <input
+        type="text"
+        formControlName="userName"
+        id="userName"
+        placeholder="demoerp@pearl.com"
+        class="form-control"
+      />
+      <div
+        *ngIf="
+          validateForm.get('userName')!.invalid &&
+          validateForm.get('userName')!.touched
+        "
+        class="invalid-feedback"
+      >
+        Please enter a valid email.
+      </div>
+    </div>
+    <div class="form-group">
+      <input
+        type="{{ hidePassword ? 'password' : 'text' }}"
+        formControlName="password"
+        id="password"
+        placeholder="admin"
+        class="form-control"
+      />
+      <div
+        *ngIf="
+          validateForm.get('password')!.invalid &&
+          validateForm.get('password')!.touched
+        "
+        class="invalid-feedback"
+      >
+        Please enter a password.
+      </div>
+    </div>
+    <!-- <div class="icon">
+       <i
+         class="fas fa-eye pointer"
+        [ngClass]="{ 'fa-eye-slash': hidePassword }"
+        (click)="togglePasswordVisibility()"
+      ></i>
+    </div> -->
+    <button type="submit" class="gill center" (click)="submitForm()">
+      Login
+    </button>
+    <div class="special-a">
+      <a routerLink="/auth/forget-password">Forgot Password</a>
+    </div>
+  </form>
+</section>

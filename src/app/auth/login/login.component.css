@@ -1,0 +1,103 @@
+.invalid-feedback{
+  display:flex
+}
+h1 {
+  text-shadow: 1px 1px 3px gray;
+  border-bottom: 1px solid blue;
+  margin: 1px 3px;
+}
+.flex {
+  display: flex;
+}
+#buttonapp {
+  padding: 12px 40px;
+  background-color: transparent;
+  border: 1px solid rgb(217, 217, 217);
+  transition-property: all;
+  transition-duration: 0.4s;
+  display: block;
+  margin: 30px auto;
+  cursor: pointer;
+}
+#buttonapp:hover {
+  border: 1px solid rgb(152, 152, 152);
+}
+.pearlerp {
+  margin: 40px 0px;
+}
+.pearlerp-form {
+  border: 1px solid rgb(186, 186, 186);
+  margin: 30px 440px;
+  box-shadow: 1px 1px 3px black;
+  border-radius: 5px;
+  padding: 10px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pearlerp-form:hover {
+  border: 1px solid rgb(144, 144, 144);
+}
+.pearlerp-form a {
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: 1px dotted black;
+  margin: 4px 70px;
+}
+.pearlerp-form h4 {
+  padding: 10px;
+  transform: skew(-10deg);
+}
+.pearlerp-form input {
+  margin: 10px 200px;
+  padding: 10px 70px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  transition-property: all;
+  transition-duration: 0.4s;
+}
+.pearlerp-form input:hover {
+  border-bottom: 1px solid rgb(140, 140, 140);
+}
+.pearlerp-form input:placeholder-shown {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.pearlerp-form button {
+  padding: 8px 150px;
+  margin: 15px;
+  border: 1px solid rgb(200, 200, 200);
+  transition-property: all;
+  color: white;
+  transition-duration: 0.4s;
+  background-color: #687cc5;
+}
+.pearlerp img {
+  position: relative;
+  left: 450px;
+  top: 18px;
+}
+.pearlerp-form button:hover {
+  border-bottom: 1px solid rgb(140, 140, 140);
+  cursor: pointer;
+}
+.icon {
+  position: relative;
+  bottom: 36px;
+  left: 120px;
+}
+.special-a {
+  position: relative;
+  right: 140px;
+}
+.special-a a {
+  color: #687cc5;
+}
