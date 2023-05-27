@@ -8,5 +8,8 @@ import { Injectable } from '@angular/core';
   styleUrls: ['./forget-password.component.css']
 })
 export class ForgetPasswordComponent {
+data(arg0: any) {
+throw new Error('Method not implemented.');
+}
 
 }
