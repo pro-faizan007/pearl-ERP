@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ForgetPasswordComponent } from './auth/forget-password/forget-password.component';
 import { LoginComponent } from './auth/login/login.component';
 import { FormsModule } from '@angular/forms';
-
+import { LocalStorageService } from './local-storage.service';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 
 @NgModule({
@@ -18,7 +18,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
     NzButtonModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [LocalStorageService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

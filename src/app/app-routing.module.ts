@@ -5,6 +5,11 @@ const routes: Routes = [
   { path: '', redirectTo: '/auth/login', pathMatch: 'full' }, // Redirect to login by default
   { path: '', redirectTo: '/auth/forget-password', pathMatch: 'full' }, // Redirect to forget Password by default
   {
+    path: 'home',
+    loadChildren: () =>
+      import('./auth/home/home.module').then((m) => m.HomeModule),
+  },
+  {
     path: 'auth',
     loadChildren: () =>
       import('./auth/auth.module').then((m) => m.AuthRoutingModule),
